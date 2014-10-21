@@ -23,6 +23,12 @@ Live Demo: http://webdevsbd.com/team-members/
 * Easy to customize (if needed).
 * Automatic members page creation.
 
+== How To Use ==
+1. Install / Activate the plugin
+2. Add Team Members from `Management Team` menu on Dashboard
+3. See Team Members page.
+   
+   THAT'S ALL ! ENJOY !
 
 == Installation ==
 1. Search `custom team manager` from Plugins->Add New page or download from here.
