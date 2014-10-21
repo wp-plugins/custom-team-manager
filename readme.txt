@@ -1,5 +1,5 @@
 === Custom Team Manager ===
-Contributors: ibnul
+Contributors: Ibnul
 Donate link: 
 Tags: custom team manager, team manager, team management, custom team management, responsive team manager
 Requires at least: 3.5
