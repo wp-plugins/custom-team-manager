@@ -19,6 +19,7 @@
 }
 #cmt-content .col-one-fourth a img{
     max-width: 100%;
+	height: auto;
 }
 #cmt-content .cmt_profile_pic img {
     max-width: 200px;
