@@ -1,7 +1,7 @@
 === Custom Team Manager ===
 Contributors: Ibnul
 Donate link: 
-Tags: custom team manager, team manager, team management, custom team management, responsive team manager
+Tags: Add Team Member, custom team manager, team manager, team management, custom team management, responsive team manager, team members, staff manager, wordpress team manager, team member
 Requires at least: 3.5
 Tested up to: 4.0
 Stable tag: 1.1
@@ -23,7 +23,7 @@ Live Demo: http://webdevsbd.com/team-members/
 * Easy to customize (if needed).
 * Automatic members page creation.
 
-== How To Use ==
+= How To Use =
 1. Install / Activate the plugin
 2. Add Team Members from `Management Team` menu on Dashboard
 3. See Team Members page.
@@ -44,7 +44,7 @@ Live Demo: http://webdevsbd.com/team-members/
 
 == Frequently asked questions ==
 
-= What shortcode to use to show members on a page?=
+= What shortcode to use to show members on a page? =
 
 Shortcode `[team-members]` to show all members on a page
 And `[team-members-profile]` for members detail page.
