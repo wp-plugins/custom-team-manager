@@ -16,7 +16,7 @@ function ibn_custom_team_members($atts, $content = null) {
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		$args = array(
 			'post_type' => 'cmt-management-team',
-			'posts_per_page' => 12,
+			'posts_per_page' => -1,
 			'paged' => $paged
 		);
 		query_posts( $args );
@@ -95,7 +95,7 @@ function ibn_custom_team_members_profile($atts, $content = null) {
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 			$args = array(
 				'post_type' => 'cmt-management-team',
-				'posts_per_page' => 12,
+				'posts_per_page' => -1,
 				'paged' => $paged
 			);
 			query_posts( $args );
