@@ -15,6 +15,7 @@
 }
 .cmt-members > p#cmt-load-members a:hover {
     background: none repeat scroll 0 0 #f0f0f0;
+	text-decoration: none;
 }
 #cmt-load-members > a {
     outline: medium none;
