@@ -1,10 +1,10 @@
 === Custom Team Manager ===
 Contributors: Ibnul
 Donate link: 
-Tags: Add Team Member, custom team manager, team manager, team management, custom team management, responsive team manager, team members, staff manager, wordpress team manager, team member
+Tags: Add Team Member, custom team manager, team manager, team management, custom team management, responsive team manager, team members, staff manager, wordpress team manager, team member, ajax team manager
 Requires at least: 3.5
 Tested up to: 4.0
-Stable tag: 1.1
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,14 +19,18 @@ Live Demo: http://webdevsbd.com/team-members/
 = Plugin Features =
 * You can add/edit member detail same way as post add/edit.
 * Responsive layout.
-* Shortcode Enabled.
+* Shortcode enabled.
+* Settings page with Ajax save.
+* Members pagination with ajax loading.
+* Excellent CSS3 modern effects.
 * Easy to customize (if needed).
 * Automatic members page creation.
 
 = How To Use =
 1. Install / Activate the plugin
-2. Add Team Members from `Management Team` menu on Dashboard
+2. Add Team Members from `Management Team` menu on Dashboard.
 3. See Team Members page.
+4. Use Settings page to changes settings.
   = THAT'S ALL ! ENJOY ! =
 
 == Installation ==
@@ -40,6 +44,7 @@ Live Demo: http://webdevsbd.com/team-members/
 2. View `yousite.com/team-members/` page and click to any member to view detail page.
 3. If you want to show team members to any other page just add the shortcode `[team-members]`
 	And `[team-members-profile]` for members detail page.
+4. Use Settings page to changes settings.
 
 == Frequently asked questions ==
 
@@ -64,13 +69,18 @@ Yes, if you want to reorder your members, please install and activate 'Post Type
  
 == Screenshots ==
 
-1. Team Members page view
-2. Team Members Profile page view
+1. Team Members page view.
+2. Team Members Profile page view.
+3. Settings Page view.
 
 == Changelog ==
 
-= 1.0.0 =
+= ver 2.1.0 =
+* Added Settings page.
+* Fixed some style problem.
+
+= ver 1.0.0 =
 * Initial release
 
 == Upgrade Notice ==
-Soon will update to 1.1.0 with reorder members option.
+Soon will update to 2.2.0 with reorder members option.

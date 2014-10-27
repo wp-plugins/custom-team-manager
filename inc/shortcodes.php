@@ -7,16 +7,20 @@ function ibn_custom_team_members($atts, $content = null) {
 
 ?>
 <div id="id-cmt-wrapper" class="cmt-wrapper mobile">
-	<div id="cmt-content">
+	<div class="cmt-members">
 		<?php if( !empty($content) ) { ?>
 			<header class="cmt-header">
 					<h1 class="cmt-title"><?php echo $content; ?></h1>
 			</header>
-		<?php }  
+		<?php } 
+
+		$mem_per_page = get_option( 'cmt_mem_per_page' );
+
+		if(!empty($mem_per_page)){ $per_page = $mem_per_page; } else{ $per_page = -1; }
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		$args = array(
 			'post_type' => 'cmt-management-team',
-			'posts_per_page' => -1,
+			'posts_per_page' => $per_page,
 			'paged' => $paged
 		);
 		query_posts( $args );
@@ -55,8 +59,57 @@ function ibn_custom_team_members($atts, $content = null) {
 		</div>
 			
 		<?php $loop++; ?>
-		<?php  }	// end of the loop. ?>
+		<?php  }	// endwhile - of the loop. ?>
 		<div class="clear"></div>
+
+		<?php if(!get_option( 'cmt_ajax_load' )){ cmt_team_members_nav(); } ?>
+<?php	
+/**
+ * Load More members with AJAX if cmt_ajax_load is true
+ */
+ 
+ $ajax_load_result = get_option( 'cmt_ajax_load' );
+
+ if($ajax_load_result){
+
+ 	// Add code to index pages.  && $post_type == 'cmt-management-team'
+ 	if( !is_admin()  ) {	
+ 		// Queue JS and CSS
+ 		wp_enqueue_script(
+ 			'cmt-load-more-members',
+ 			plugin_dir_url( dirname(__FILE__)  ) . 'js/cmt-load-more-members.js',
+ 			array('jquery'),
+ 			'2.1.0',
+ 			true
+ 		);
+ 	
+		$count_posts = wp_count_posts('cmt-management-team');
+		$published_posts = $count_posts->publish; 		
+ 		// What page are we on? And what is the pages limit?
+
+		$mem_per_page = get_option( 'cmt_mem_per_page' );
+		$max = 0;
+		if(!empty($mem_per_page)){
+			$max = $published_posts / $mem_per_page;
+			if($published_posts % $mem_per_page != 0) { $max = $max + 1; }
+		}
+ 		$paged = ( get_query_var('paged') > 1 ) ? get_query_var('paged') : 1;
+		
+ 		// Add some parameters for the JS.
+ 		wp_localize_script(
+ 			'cmt-load-more-members',
+ 			'cmt_data',
+ 			array(
+ 				'startPage' => $paged,
+ 				'maxPages' => $max,
+ 				'nextLink' => next_posts($max, false)
+ 			)
+ 		);
+ 	}
+ }
+ ?>
+ 
+ 
 		<?php
 		}else{	// end if
 			echo 'There is no member added yet. Please add members through Management Team on Dashboard.';

@@ -1,37 +1,82 @@
 // CSS for the plugin only
 .clear{ clear: both; }
-#cmt-content a {
+
+
+.cmt-members > p#cmt-load-members a{
+    background: none repeat scroll 0 0 #d0d0d0;
+    border: 1px solid;
+    border-radius: 3px;
+    box-shadow: 0 0 3px;
+    color: inherit;
+    margin: 30px auto;
+    text-align: center;
+    width: 220px;
+	outline: none;
+}
+.cmt-members > p#cmt-load-members a:hover {
+    background: none repeat scroll 0 0 #f0f0f0;
+}
+#cmt-load-members > a {
+    outline: medium none;
+    display: block;
+    padding: 10px;
+    transition: all 0.5s ease-in-out 0s;
+	font-weight: bold;
+}
+.cmt-nav-next {
+    display: inline-block;
+    float: right;
+}
+.cmt-nav-previous {
+    display: inline-block;
+    float: left;
+}
+.cmt-members-navigation {
+    margin: 30px 0;
+}
+
+.cmt-members a {
     font-family: inherit;
     text-decoration: none;
 }
-
-#cmt-content h4.cmt-name {
+.cmt-members, .col-one-fourth{  
+    transition: all 0.4s ease-in-out 0s;
+}
+.cmt-members h4.cmt-name {
     color: inherit;
     font-size: 16px;
     font-weight: bold;
     margin: 3px 0;
 	line-height: 20px;
 }
-#cmt-content .col-one-fourth a img, #cmt-content .cmt_profile_pic img {
+.cmt-members .col-one-fourth a img, #cmt-content .cmt_profile_pic img {
     border-radius: 5px;
     box-shadow: 0 1px 2px;
     transition: all 0.4s ease-in-out 0s;
 }
-#cmt-content .col-one-fourth a img{
+.cmt-members .col-one-fourth a img{
     max-width: 100%;
 	height: auto;
 }
-#cmt-content .cmt_profile_pic img {
+.cmt-members .cmt_profile_pic img, #cmt-content  .cmt_profile_pic img{
     max-width: 200px;
+	height: auto;
+	margin: 10px 10px 10px 0;
 }
-#cmt-content .col-one-fourth a img:hover{
+.cmt-members:hover .col-one-fourth {
+    opacity: 0.45;
+}
+.cmt-members .col-one-fourth:hover {
+    opacity: 1;
+}
+.cmt-members .col-one-fourth a img:hover{
 	opacity: 0.8;
 }
 .cmt_profile {
     clear: both;
     padding: 20px 0;
 }
-#cmt-content p {
+.cmt-members p {
     margin: 0 0 5px;
 }
 .cmt-full-profile{    line-height: 40px;	}
