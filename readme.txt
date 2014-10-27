@@ -75,11 +75,11 @@ Yes, if you want to reorder your members, please install and activate 'Post Type
 
 == Changelog ==
 
-= ver 2.1.0 = 27.10.2014
+= ver 2.1.0 - 27.10.2014 = 
 * Added Settings page.
 * Fixed some style problem.
 
-= ver 1.0.0 = 20.10.2014
+= ver 1.0.0 - 20.10.2014 =
 * Initial release
 
 == Upgrade Notice ==
