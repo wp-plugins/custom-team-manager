@@ -82,7 +82,7 @@ Use `[cmt-content]`your content here`[/cmt-content]` to show some content before
 == Changelog ==
 
 = ver 2.1.1 - 28.10.2014 =
-* Fixed - Position of some text before Team Members
+* Fixed - Position of some text before/after Team Members
 
 = ver 2.1.0 - 27.10.2014 = 
 * Added Settings page.
