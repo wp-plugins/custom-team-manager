@@ -31,6 +31,7 @@ Live Demo: http://webdevsbd.com/team-members/
 2. Add Team Members from `Management Team` menu on Dashboard.
 3. See Team Members page.
 4. Use Settings page to changes settings.
+5. Use `[cmt-content]`your content here`[/cmt-content]` to show some content before or after shortcode `[team-members]` or `[team-members-profile]`
   = THAT'S ALL ! ENJOY ! =
 
 == Installation ==
@@ -45,6 +46,7 @@ Live Demo: http://webdevsbd.com/team-members/
 3. If you want to show team members to any other page just add the shortcode `[team-members]`
 	And `[team-members-profile]` for members detail page.
 4. Use Settings page to changes settings.
+5. Use `[cmt-content]`your content here`[/cmt-content]` to show some content before or after shortcode `[team-members]` or `[team-members-profile]` - it'll position the content correctly.
 
 == Frequently asked questions ==
 
@@ -66,7 +68,11 @@ No, for now there is no options/settings page. But it'll be added on next versio
 = Do I need to use any supporting plugin for best use of this plugin? =
 
 Yes, if you want to reorder your members, please install and activate 'Post Types Order' plugin
- 
+
+= I want to add text and images before the [team-members] And [team-members-profile], but it load the plugin infor then the information that I add before the plugin. How to position correctly ?
+
+Use `[cmt-content]`your content here`[/cmt-content]` to show some content before or after shortcode `[team-members]` or `[team-members-profile]` - it'll position the content correctly.
+
 == Screenshots ==
 
 1. Team Members page view.
