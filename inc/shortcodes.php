@@ -79,7 +79,7 @@ function ibn_custom_team_members($atts, $content = null) {
  			'cmt-load-more-members',
  			plugin_dir_url( dirname(__FILE__)  ) . 'js/cmt-load-more-members.js',
  			array('jquery'),
- 			'2.1.0',
+ 			'2.1.1',
  			true
  		);
  	
@@ -222,6 +222,10 @@ function register_shortcodes_members_profile(){
 }
 add_action( 'init', 'register_shortcodes_members_profile');
 
-
+// to show some content
+function cmt_content_func( $atts, $content="" ) {
+     echo "$content";
+}
+add_shortcode( 'cmt-content', 'cmt_content_func' );
 
 ?>
