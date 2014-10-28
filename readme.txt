@@ -67,9 +67,9 @@ No, for now there is no options/settings page. But it'll be added on next versio
 
 = Do I need to use any supporting plugin for best use of this plugin? =
 
-Yes, if you want to reorder your members, please install and activate 'Post Types Order' plugin
+Yes, if you want to reorder your members, please install and activate 'Post Types Order' plugin.
 
-= I want to add text and images before the [team-members] And [team-members-profile], but it load the plugin infor then the information that I add before the plugin. How to position correctly ?
+= I want to add text and images before the [team-members] And [team-members-profile], but it load the plugin infor then the information that I add before the plugin. How to position correctly ? =
 
 Use `[cmt-content]`your content here`[/cmt-content]` to show some content before or after shortcode `[team-members]` or `[team-members-profile]` - it'll position the content correctly.
 
