@@ -25,7 +25,7 @@ Live Demo: http://webdevsbd.com/team-members/
 * Excellent CSS3 modern effects.
 * Easy to customize (if needed).
 * Automatic members page creation.
-* Limit number of team member to display.
+* Option to specify number of team members to display.
 * Custom CSS option.
 
 = How To Use =
