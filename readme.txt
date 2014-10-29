@@ -26,7 +26,7 @@ Live Demo: http://webdevsbd.com/team-members/
 * Easy to customize (if needed).
 * Automatic members page creation.
 * Option to specify number of team members to display.
-* Custom CSS option.
+* Custom CSS option. 
 
 = How To Use =
 1. Install / Activate the plugin
