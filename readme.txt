@@ -25,12 +25,14 @@ Live Demo: http://webdevsbd.com/team-members/
 * Excellent CSS3 modern effects.
 * Easy to customize (if needed).
 * Automatic members page creation.
+* Limit number of team member to display.
+* Custom CSS option.
 
 = How To Use =
 1. Install / Activate the plugin
 2. Add Team Members from `Management Team` menu on Dashboard.
 3. See Team Members page.
-4. Use Settings page to changes settings.
+4. Use Settings page to changes settings and custom CSS
 5. Use `[cmt-content]`your content here`[/cmt-content]` to show some content before or after shortcode `[team-members]` or `[team-members-profile]` - it'll position the content correctly.
   = THAT'S ALL ! ENJOY ! =
 
