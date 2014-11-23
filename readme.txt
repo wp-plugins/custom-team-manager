@@ -83,6 +83,10 @@ Use `[cmt-content]`your content here`[/cmt-content]` to show some content before
 
 == Changelog ==
 
+= ver 2.3.2 - 24.11.2014 =
+* Added options to select page for members full profile.
+* Added two types of full profile view.
+
 = ver 2.1.1 - 28.10.2014 =
 * Fixed - Position of some text before/after Team Members
 
@@ -94,4 +98,4 @@ Use `[cmt-content]`your content here`[/cmt-content]` to show some content before
 * Initial release
 
 == Upgrade Notice ==
-Soon will update to 2.2.0 with reorder members option.
+Soon will update to 2.4.0 with categories.

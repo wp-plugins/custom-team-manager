@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 	if(pageNum <= max) {
 		// Insert the "More Posts" link.
 		$('.cmt-members')
-			.append('<div class="cmt-nav-placeholder-'+ pageNum +'"></div>')
+			.append('<div id="cmt-newpage" class="cmt-nav-placeholder-'+ pageNum +'"></div>')
 			.append('<p id="cmt-load-members"><a href="#">Load More Members</a></p>');
 			
 		// Remove the traditional navigation.

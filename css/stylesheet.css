@@ -7,15 +7,20 @@
     border: 1px solid;
     border-radius: 3px;
     box-shadow: 0 0 3px;
+    clear: both;
     color: inherit;
     margin: 30px auto;
+    outline: medium none;
     text-align: center;
+    text-decoration: none;
     width: 220px;
-	outline: none;
 }
 .cmt-members > p#cmt-load-members a:hover {
     background: none repeat scroll 0 0 #f0f0f0;
 	text-decoration: none;
+}
+#cmt-newpage {
+    clear: both;
 }
 #cmt-load-members > a {
     outline: medium none;
@@ -79,6 +84,7 @@
 }
 .cmt-members p {
     margin: 0 0 5px;
+	clear: both;
 }
 .cmt-full-profile{    line-height: 40px;	}
 .col-one-fourth:last-child {

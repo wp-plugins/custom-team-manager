@@ -40,13 +40,28 @@ function ibn_custom_team_members($atts, $content = null) {
 		?>
 		<div class="col-one-fourth<?php echo $cls; ?>">					
 			<?php 
-			$name = get_the_title(); 
-			$link = preg_replace('/\s+/', '-', $name); 
+			// check if single page or not.
+			$profile_single = get_option( 'cmt_single_page' );
+			
+			
+			if($profile_single == 0){  // is not single page
+				$profile_link = get_post_permalink();
+			}else{	// is single page.
+				//which page to show profiles.
+				$cmt_profile_page = get_option( 'cmt_profile_page' );
+				$name = get_the_title();
+				$link = preg_replace('/\s+/', '-', $name); 
+				$page_slug = get_permalink( $cmt_profile_page['page_id'], false );
+				
+				$profile_link = $page_slug.'/#'.$link;
+				
+		
+			}
 			
 			if( has_post_thumbnail() ){ ?>
-				<a href="<?php bloginfo('url'); echo '/team-members-profile/#'.$link ?>"><?php the_post_thumbnail('full'); ?></a>
+				<a href="<?php echo $profile_link; ?>"><?php the_post_thumbnail('full'); ?></a>
 			<?php } ?>
-			<a href="<?php bloginfo('url'); echo '/team-members-profile/#'.$link ?>"><h4 class="cmt-name"><?php the_title(); ?></h4></a>
+			<a href="<?php echo $profile_link; ?>"><h4 class="cmt-name"><?php the_title(); ?></h4></a>
 			<p><strong><em>
 			  <?php
 				  // If we are in a loop we can get the post ID easily
@@ -55,7 +70,7 @@ function ibn_custom_team_members($atts, $content = null) {
 			  ?>
 			</em></strong></p>
 			<?php the_excerpt(); ?>
-			<a class="cmt-full-profile" href="<?php bloginfo('url'); echo '/team-members-profile/#'.$link ?>">Full Profile ...</a>
+			<a class="cmt-full-profile" href="<?php echo $profile_link; ?>">Full Profile ...</a>
 		</div>
 			
 		<?php $loop++; ?>
@@ -79,7 +94,7 @@ function ibn_custom_team_members($atts, $content = null) {
  			'cmt-load-more-members',
  			plugin_dir_url( dirname(__FILE__)  ) . 'js/cmt-load-more-members.js',
  			array('jquery'),
- 			'2.1.1',
+ 			'2.3.2',
  			true
  		);
  	
@@ -159,6 +174,7 @@ function ibn_custom_team_members_profile($atts, $content = null) {
 			?>			
 		
 			<?php 
+			
 			$name = get_the_title(); 
 			$link = preg_replace('/\s+/', '-', $name); 
 			?>
