@@ -82,9 +82,6 @@ Yes, if you want to reorder your members, please install and activate 'Post Type
 
 Use `[cmt-content]`your content here`[/cmt-content]` to show some content before or after shortcode `[team-members]` or `[team-members-profile]` - it'll position the content correctly.
 
-= Getting `404 Not Found` for single full profile page? =
-
-If you use single profile on single page and get `404 Not Found` for single full profile page, you need to flush permalink. Just go to Dashboard->Settings->Permalink , then click on Save button. You don't need anything to change.
 
 == Screenshots ==
 
