@@ -35,6 +35,7 @@ Live Demo: http://webdevsbd.com/team-members/
 4. Use Settings page to changes settings and custom CSS
 5. Use `[cmt-content]`your content here`[/cmt-content]` to show some content before or after shortcode `[team-members]` or `[team-members-profile]` - it'll position the content correctly.
 6. If you use single profile on single page and get `404 Not Found` for single full profile page, you need to flush permalink. Just go to Dashboard->Settings->Permalink , then click on Save button. You don't need anything to change.
+  
   = THAT'S ALL ! ENJOY ! =
 
 == Installation ==
