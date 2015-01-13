@@ -68,7 +68,7 @@ Shortcode `[team-members]` to show all members on a page
 And `[team-members-profile]` for members detail page.
 
 = Show members according to category =
-Use `[team-members category="your-category"]` and if you want to show all members full profile on a single page while you are using categor, you've to use `[team-members category="your-category" pageid="full-profile-pageid"]` and on the full profile page use shortcode `[team-members-profile category="your-category"]` but if you want to show each member full profile on separate page then you no need to worry about full profile page.
+Use `[team-members category="your-category"]` and if you want to show all members full profile on a single page while you are using category, you've to use `[team-members category="your-category" pageid="full-profile-pageid"]` and on the full profile page use shortcode `[team-members-profile category="your-category"]` but if you want to show each member full profile on separate page then you no need to worry about full profile page.
 
 = What if you get 404 Not Found for single profile on single page = 
 
