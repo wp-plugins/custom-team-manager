@@ -3,7 +3,7 @@ Contributors: Ibnul
 Donate link: 
 Tags: Add Team Member, custom team manager, team manager, team management, custom team management, responsive team manager, team members, staff manager, wordpress team manager, team member, ajax team manager
 Requires at least: 3.5
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -34,6 +34,8 @@ Live Demo: http://webdevsbd.com/team-members/
 3. See Team Members page.
 4. Use Settings page to changes settings and custom CSS
 5. Use `[cmt-content]`your content here`[/cmt-content]` to show some content before or after shortcode `[team-members]` or `[team-members-profile]` - it'll position the content correctly.
+6. If you use single profile on single page and get `404 Not Found` for single full profile page, you need to flush permalink. Just go to Dashboard->Settings->Permalink , then click on Save button. You don't need anything to change.
+  
   = THAT'S ALL ! ENJOY ! =
 
 == Installation ==
@@ -49,6 +51,7 @@ Live Demo: http://webdevsbd.com/team-members/
 	And `[team-members-profile]` for members detail page.
 4. Use Settings page to changes settings.
 5. Use `[cmt-content]`your content here`[/cmt-content]` to show some content before or after shortcode `[team-members]` or `[team-members-profile]` - it'll position the content correctly.
+6. If you use single profile on single page and get `404 Not Found` for single full profile page, you need to flush permalink. Just go to Dashboard->Settings->Permalink , then click on Save button. You don't need anything to change.
 
 == Frequently asked questions ==
 
@@ -56,6 +59,10 @@ Live Demo: http://webdevsbd.com/team-members/
 
 Shortcode `[team-members]` to show all members on a page
 And `[team-members-profile]` for members detail page.
+
+= What if you get 404 Not Found for single profile on single page = 
+
+Just go to Dashboard->Settings->Permalink , then click on Save button. You don't need anything to change.
 
 = Is there any page creating automatically when activating the plugin? =
 
@@ -65,15 +72,16 @@ Yes, two pages are creating when activating the plugin. One is to show all membe
 
 = Is there any options/settings page for the plugin? =
 
-No, for now there is no options/settings page. But it'll be added on next version.
+Yes, you can change few options there from plugin Settings page.
 
-= Do I need to use any supporting plugin for best use of this plugin? =
+= Do you need to use any supporting plugin for best use of this plugin? =
 
 Yes, if you want to reorder your members, please install and activate 'Post Types Order' plugin.
 
 = I want to add text and images before the [team-members] And [team-members-profile], but it load the plugin infor then the information that I add before the plugin. How to position correctly ? =
 
 Use `[cmt-content]`your content here`[/cmt-content]` to show some content before or after shortcode `[team-members]` or `[team-members-profile]` - it'll position the content correctly.
+
 
 == Screenshots ==
 
