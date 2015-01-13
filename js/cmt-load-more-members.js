@@ -1,5 +1,14 @@
 jQuery(document).ready(function($) {
 
+
+	//change opacity on hover
+	$('.cmt-members .col-one-fourth').hover(function(){
+		$('.col-one-fourth').css('opacity', '0.45');
+		$(this).css('opacity', '1.0');
+	},function(){
+		$('.col-one-fourth').css('opacity', '1.0');
+	});
+
 	// The number of the next page to load (/page/x/).
 	var pageNum = parseInt(cmt_data.startPage) + 1;
 
@@ -43,8 +52,8 @@ jQuery(document).ready(function($) {
 					if( target.length ) {
 						//event.preventDefault();
 						$('html, body').animate({
-							scrollTop: target.offset().top
-						}, 1000);
+							scrollTop: target.offset().top - 50
+						}, 500);
 					}
 					
 					// Update page number and nextLink.

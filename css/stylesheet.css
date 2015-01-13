@@ -69,15 +69,17 @@
 	height: auto;
 	margin: 10px 10px 10px 0;
 }
+/*
 .cmt-members:hover .col-one-fourth {
     opacity: 0.45;
-}
+}  */
 .cmt-members .col-one-fourth:hover {
-    opacity: 1;
+    opacity: 0.55;
 }
+/*
 .cmt-members .col-one-fourth a img:hover{
 	opacity: 0.8;
-}
+}  */
 .cmt_profile {
     clear: both;
     padding: 20px 0;
