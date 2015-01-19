@@ -272,7 +272,7 @@ add_action( 'init', 'register_shortcodes_members_profile');
 
 // to show some content
 function cmt_content_func( $atts, $content="" ) {
-     echo "$content";
+    return $content;
 }
 add_shortcode( 'cmt-content', 'cmt_content_func' );
 
